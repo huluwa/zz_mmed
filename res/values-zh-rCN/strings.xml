@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">每美汇</string>
+    <string name="action_settings">设置</string>
+    <string name="update">更新</string>
+	<string name="pull_to_refresh">下拉更新</string>
+	<string name="refreshing">正在更新</string>
+	<string name="release_to_refresh">放开更新</string>
+	<string name="action_refresh">刷新</string>
+	<string name="action_setting">设置</string>
+	<string name="image_desc">图片</string>
+	<string name="update_failed">更新失败，请检查网络</string>
+	<string name="my_favorite">我的收藏</string>
+	<string name="empty_favorite">没有收藏的美女哦，快去浏览添加收藏吧</string>
+	
+	<string name="preferences_category_general">常规</string>
+	<string name="preferences_category_other">其他</string>
+	<string name="preferences_category_about">关于</string>
+	<string name="preferences_auto_hide_title">自动隐藏标题栏</string>
+	<string name="preferences_auto_hide_title_prompt">查看图片时自动隐藏标题栏和操作栏</string>
+	<string name="preferences_cell_number">网格列数</string>
+	<string name="preferences_cell_number_prompt">主界面的网格上显示的图片列数</string>
+	<string name="preferences_cache_limit">缓存大小</string>
+	<string name="preferences_cache_limit_prompt">更大的缓存空间可以节省网络流量</string>
+	<string name="preferences_clear_cache">清除缓存</string>
+	<string name="preferences_clear_cache_prompt">缓存的图片 </string>
+	<string name="preferences_clear_favorite">清空收藏</string>
+	<string name="preferences_clear_favorite_prompt">收藏的图片</string>
+	<string name="preferences_check_version">检查新版本</string>
+	<string name="preferences_check_version_prompt">当前软件版本</string>
+	<string name="preferences_feedback">意见反馈</string>
+	<string name="preferences_about">关于</string>
+	<string name="preferences_download_only_in_wifi">只在WIFI环境下联网</string>
+	<string name="preferences_download_only_in_wifi_prompt">关闭此选项可能会造成流量大增哦</string>
+	<string name="about_sfox_studio">灵狐软件工作室 - sfox.studio@qq.com</string>
+	<string name="about_app">阅天下美图 享快乐生活</string>
+	<string name="preferences_hot_apps">热门应用</string>
+	<string name="preferences_disable_ads">禁用广告</string>
+	<string name="preferences_disable_ads_prompt">禁用全屏浏览图片时的广告显示</string>
+	<string name="confirm_disable_ads">广告能让我们深夜码字的时候喝上咖啡，抽上香烟。\n你确认要关闭广告么？</string>
+	<string name="thanks_for_support">感谢对我们的支持</string>
+	
+	<string name="clear_cache">正在清除缓存</string>
+	<string name="clear_favorite">正在清空收藏的图片</string>
+	<string name="clear_cache_finished">缓存己清除</string>
+	<string name="clear_favorite_finished">收藏的图片己清空</string>
+	<string name="confirm_clear_favorite">将清空所有收藏的图片，此操作不可恢复</string>
+	<string name="favorite_added">己收藏</string>
+	<string name="favorite_removed">己从收藏移除</string>
+	<string name="saved_to_album">己保存到图库</string>
+	<string name="press_to_exit">再按一次就退出了哦</string>
+	<string name="data_alert">流量警报</string>
+	<string name="data_throughput_alert">WIFI不可用\n高清多图，巨费流量哦</string>
+	<string name="view_offline">离线模式</string>
+	<string name="IAmOK">我是土豪</string>
+	<string name="offline_mode">WIFI不可用，当前处于离线模式</string>
+	<string name="no_new_version">当前己是最新版本</string>
+	<string name="check_version_timeout">检查更新超时</string>
+	<string name="checking_new_version">正在检查新版本</string>
+	
+	<string-array name="preferences_cell_number">
+        <item>两列</item>
+        <item>三列</item>
+        <item>四列</item>
+    </string-array>
+    
+    <string-array name="preferences_cache_limit">
+	    <item>50MB</item>
+        <item>100MB</item>
+        <item>200MB</item>
+        <item>不限制</item>
+	</string-array>
+	
+	<string-array name="image_category">
+        <item>热门</item>
+        <item>最新</item>
+        <item>收藏</item>
+    </string-array>
+</resources>

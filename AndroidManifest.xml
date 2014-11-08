@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sfox.beautyeveryday"
+    android:versionCode="13"
+    android:versionName="1.3.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- umeng start -->
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+	<!-- umeng end -->
+	<!-- waps start -->
+	<uses-permission android:name="android.permission.GET_TASKS"/> 
+	<!-- waps end -->
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.sfox.beautyeveryday.MainActivity"
+            android:label="@string/app_name" 
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.sfox.beautyeveryday.ImageViewerActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.sfox.beautyeveryday.SettingsActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.sfox.beautyeveryday.AboutActivity" 
+            android:screenOrientation="portrait"/>
+        <!-- umeng start -->
+        <!-- umeng update -->
+        <service
+		    android:name="com.umeng.update.net.DownloadingService"
+		    android:process=":DownloadingService" >
+		</service>
+		<activity 
+		    android:name="com.umeng.update.UpdateDialogActivity"
+		    android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+		</activity>
+		<!-- umeng feedback -->
+		<activity android:name="com.umeng.fb.ConversationActivity"
+         	android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.umeng.fb.ContactActivity"
+         	android:theme="@android:style/Theme.NoTitleBar"/>
+        <meta-data android:value="539418616c738f0dd3000038" android:name="UMENG_APPKEY"></meta-data>
+        <meta-data android:value="default" android:name="UMENG_CHANNEL"/>
+        <!-- umeng end -->
+        <!-- waps -->
+        <meta-data android:value="c1fca228b5394816448d4e6e1571a6a4" android:name="APP_ID" />
+        <meta-data android:value="default" android:name="APP_PID" />
+    </application>
+</manifest>

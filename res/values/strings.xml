@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MMED</string>
+    <string name="action_settings">Settings</string>
+    <string name="update">update</string>
+	<string name="pull_to_refresh">pull to refresh</string>
+	<string name="refreshing">refreshing</string>
+	<string name="release_to_refresh">release to refresh</string>
+	<string name="image_desc">image</string>
+	<string name="action_refresh">refresh</string>
+	<string name="action_setting">setting</string>
+	<string name="update_failed">update failed</string>
+	<string name="my_favorite">my favorite</string>
+	<string name="empty_favorite">favorite is empty</string>
+	
+	<string name="preferences_category_general">general</string>
+	<string name="preferences_category_other">other</string>
+	<string name="preferences_category_about">about</string>
+	<string name="preferences_auto_hide_title">auto hide title bar</string>
+	<string name="preferences_auto_hide_title_prompt">Hide title bar automatically when view image</string>
+	<string name="preferences_cell_number">grid column number</string>
+	<string name="preferences_cell_number_prompt">column number for the grid view</string>
+	<string name="preferences_cache_limit">cache size limit</string>
+	<string name="preferences_cache_limit_prompt">large cache size will reduce network data throughput</string>
+	<string name="preferences_clear_cache">clear cache</string>
+	<string name="preferences_clear_cache_prompt">cache size </string>
+	<string name="preferences_clear_favorite">clear favorite</string>
+	<string name="preferences_clear_favorite_prompt">favorite size</string>
+	<string name="preferences_check_version">check new version</string>
+	<string name="preferences_check_version_prompt">current version</string>
+	<string name="preferences_about">about</string>
+	<string name="preferences_feedback">feedback</string>
+	<string name="preferences_download_only_in_wifi">download images only when WIFI available</string>
+	<string name="preferences_download_only_in_wifi_prompt">disable this may cause data throughput become large</string>
+	<string name="clear_cache">clearing cache</string>
+	<string name="clear_cache_finished">cache cleared</string>
+	<string name="clear_favorite">clearing favorite</string>
+	<string name="clear_favorite_finished">favorite cleared</string>
+	<string name="confirm_clear_favorite">Are you sure to remove all favorite images?</string>
+	<string name="favorite_added">added to favorite</string>
+	<string name="favorite_removed">removed from favorite</string>
+	<string name="saved_to_album">saved to album</string>
+	<string name="press_to_exit">press one more time to exist</string>
+	<string name="data_alert">data alert</string>
+	<string name="data_throughput_alert">your WIFI not available\nthis app will transfer huge data through mobile</string>
+	<string name="view_offline">view offline</string>
+	<string name="IAmOK">I am OK</string>
+	<string name="offline_mode">you are in offline mode, only can update in WIFI</string>
+	<string name="no_new_version">This is the latest version</string>
+	<string name="check_version_timeout">timeout to check new version</string>
+	<string name="checking_new_version">checking new version</string>
+	<string name="about_sfox_studio">SFOX STUDIO - sfox.studio@qq.com</string>
+	<string name="about_app">view beauties in the world</string>
+	<string name="preferences_hot_apps">hot apps</string>
+	<string name="preferences_disable_ads">disable ads</string>
+	<string name="preferences_disable_ads_prompt">disable ads in image viewer</string>
+	<string name="confirm_disable_ads">ADs maks us better support this software.\nAre you sure to disable it?</string>
+	<string name="thanks_for_support">Thnaks for support us</string>
+	
+	<string-array name="image_category">
+        <item>hot</item>
+        <item>latest</item>
+        <item>favorite</item>
+    </string-array>
+    
+	<string-array name="preferences_cell_number">
+        <item>2 column</item>
+        <item>3 column</item>
+        <item>4 column</item>
+    </string-array>
+    
+	<string-array name="preferences_cache_limit">
+	    <item>50MB</item>
+        <item>100MB</item>
+        <item>200MB</item>
+        <item>No limited</item>
+	</string-array>
+    
+</resources>

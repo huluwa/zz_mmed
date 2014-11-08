@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/action_setting">
+    <PreferenceCategory android:key="pref_category_general" 
+        android:title="@string/preferences_category_general">
+        <Preference
+            android:key="pref_key_clear_cache" 
+            android:title="@string/preferences_clear_cache" 
+            android:summary="@string/preferences_clear_cache_prompt" />
+        <Preference
+            android:key="pref_key_clear_favorite" 
+            android:title="@string/preferences_clear_favorite" 
+            android:summary="@string/preferences_clear_favorite_prompt" />
+        <ListPreference
+            android:key="pref_key_cache_limit" 
+            android:title="@string/preferences_cache_limit" 
+            android:summary="@string/preferences_cache_limit_prompt" 
+            android:entries="@array/preferences_cache_limit"
+            android:entryValues="@array/preferences_cache_limit_values"
+            android:defaultValue="50" />
+        <CheckBoxPreference
+            android:key="pref_key_auto_hide_title" 
+            android:title="@string/preferences_auto_hide_title" 
+            android:summary="@string/preferences_auto_hide_title_prompt" 
+            android:defaultValue="false" />
+        <CheckBoxPreference
+            android:key="pref_key_download_only_in_wifi" 
+            android:title="@string/preferences_download_only_in_wifi" 
+            android:summary="@string/preferences_download_only_in_wifi_prompt" 
+            android:defaultValue="true" />
+        <ListPreference
+            android:key="pref_key_column_number" 
+            android:title="@string/preferences_cell_number" 
+            android:summary="@string/preferences_cell_number_prompt" 
+            android:entries="@array/preferences_cell_number"
+            android:entryValues="@array/preferences_cell_number_values"
+            android:defaultValue="2" />
+        <CheckBoxPreference
+            android:key="pref_key_disable_ads" 
+            android:title="@string/preferences_disable_ads" 
+            android:summary="@string/preferences_disable_ads_prompt" 
+            android:defaultValue="false"
+            android:persistent="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/preferences_category_about">
+        <Preference
+            android:key="pref_key_check_version" 
+            android:title="@string/preferences_check_version"
+            android:summary="@string/preferences_check_version_prompt" />
+        <Preference
+            android:key="pref_key_hot_apps" 
+            android:title="@string/preferences_hot_apps" />
+        <Preference
+            android:key="pref_key_feedback" 
+            android:title="@string/preferences_feedback" />
+        <Preference
+            android:key="pref_key_about" 
+            android:title="@string/preferences_about" >
+            <intent
+	            android:action="android.intent.action.MAIN"
+	            android:targetPackage="com.sfox.beautyeveryday"
+	            android:targetClass="com.sfox.beautyeveryday.AboutActivity" />
+		</Preference>
+    </PreferenceCategory>
+</PreferenceScreen>

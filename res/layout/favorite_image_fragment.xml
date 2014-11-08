@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <GridView
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent" 
+		android:layout_height="match_parent"
+	    android:padding="0dip"
+	    android:verticalSpacing="@dimen/image_cell_spacing"
+	    android:horizontalSpacing="@dimen/image_cell_spacing"
+	    android:numColumns="auto_fit"
+	    android:columnWidth="0dip"
+	    android:stretchMode="columnWidth"
+	    android:listSelector="@null"/>
+    
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="#444444"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        android:text="@string/empty_favorite" />
+
+</RelativeLayout>

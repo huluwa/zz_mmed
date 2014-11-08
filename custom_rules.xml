@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="deploy_rules" default="deploy">
+
+    <!-- ant deploy-->
+    <taskdef resource="net/sf/antcontrib/antcontrib.properties">  
+        <classpath>  
+            <pathelement location="lib/ant-contrib-1.0b3.jar"/>  
+        </classpath>  
+    </taskdef>
+
+    <target name="deploy">  
+       <foreach target="modify_manifest" list="${market_channels}" param="channel" delimiter=",">       
+       </foreach>  
+    </target>  
+    
+    <target name="modify_manifest">  
+        <replaceregexp flags="g" byline="false">  
+            <!-- android:value="*****" android:name="UMENG_CHANNEL" -->  
+            <regexp pattern='android:value="(.*)" android:name="UMENG_CHANNEL"' />  
+            <!-- android:value="channel_name" android:name="UMENG_CHANNEL" -->  
+            <substitution expression='android:value="${channel}" android:name="UMENG_CHANNEL"' />
+            <!-- file list AndroidManifest.xml -->  
+            <fileset dir="" includes="AndroidManifest.xml" />  
+        </replaceregexp>
+        <replaceregexp flags="g" byline="false">  
+            <!-- android:value="default" android:name="APP_PID" -->  
+            <regexp pattern='android:value="(.*)" android:name="APP_PID"' />  
+            <!-- android:value="channel_name" android:name="APP_PID" -->  
+            <substitution expression='android:value="${channel}" android:name="APP_PID"' />
+        <fileset dir="" includes="AndroidManifest.xml" />
+        </replaceregexp>    
+        <property name="out.release.file" location="${out.absolute.dir}/${ant.project.name}_${channel}.apk" />  
+         <!-- build release target -->
+        <antcall target="release" />  
+         <!-- copy apks to bin/out -->  
+        <copy tofile="${out.absolute.dir}/out/${ant.project.name}_v${version}_${channel}.apk" file="bin/${ant.project.name}-release.apk"/>  
+    </target>
+
+</project>

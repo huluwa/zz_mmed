@@ -1,0 +1,5 @@
+<resources>
+	<dimen name="image_cell_spacing">1dip</dimen>
+	<dimen name="refresh_header_height">40dip</dimen>
+	<dimen name="bar_height">45dip</dimen>
+</resources>

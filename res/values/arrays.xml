@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="preferences_cell_number_values">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    
+	<string-array name="preferences_cache_limit_values">
+        <item>50</item>
+        <item>100</item>
+        <item>200</item>
+        <item>0</item>
+    </string-array>
+    
+	    <!-- do not translate -->
+    <string name="channel">美女</string>
+    <string-array name="image_tag_name">
+        <item>全部</item>
+        <item>小清新</item>
+        <item>甜素纯</item>
+        <item>清纯</item>
+        <item>网络美女</item>
+        <item>唯美</item>
+        <item>气质</item>
+        <item>可爱</item>
+        <item>非主流</item>
+        <item>高雅大气很有范</item>
+    </string-array>
+</resources>
